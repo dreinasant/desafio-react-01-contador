@@ -1,38 +1,183 @@
-.App {
-  text-align: center;
+*{
+  padding:0;
+  margin:0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1{
+  width: 100%;
+  background: chocolate;
+  display: flex;
+  justify-content: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contain {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+h2{
+  margin-top: 20px;
+  background-color:chocolate;
+  width: 4%;
+  height: 8vh;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box{
+  display: block;
+}
+.box-ham{
+  width: 2.3%;
+  position: absolute;
+  right: 20%;
+  top: 12%;
+  animation-name: tremulacao;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transform: rotate(5deg);
+}
+.box-orange{
+  width: 5%;
+  position: absolute;
+  right: 30%;
+  top: 32%;
+  animation-name: tremulacao;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transform: rotate(5deg);
+}
+.box-cake{
+  width: 3%;
+  position: absolute;
+  right: 65%;
+  top: 50%;
+  animation-name: tremulacao;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.box-watermelon{
+  width: 2%;
+  position: relative;
+  right: 140px;
+  bottom: 0px;
+  border-radius: 26px;
+}
+.box-pear{
+  width: 3%;
+  position: absolute;
+  right: 40%;
+  top: 30%;
+  animation-name: tremulacao;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes tremulacao {
+  0% { width: 40px; box-shadow: 1px 2px 60px rgba(255, 255, 255, 1); }
+  25% { height: 25px; box-shadow: 1px 2px 80px rgba(255, 255, 255, 1); }
+  50% { box-shadow: 1px 2px 120px rgba(255, 255, 255, 1); }
+  75% { height: 40px; box-shadow: 1px 2px 180px rgba(255, 255, 255, 1); }
+  100% { width: 30px; height: 35px; box-shadow: 1px 20px 220px rgba(255, 255, 255, 1); }
+  }
+.box-icecream{
+  width: 3%;
+  position: relative;
+  left: 250px;
+  bottom: 50px;
+  border-radius: 26px;
+}
+.box-pou{
+  background-color: chocolate;
+  width: 340px;
+  height: 340px;
+  border: solid black 2px;
+  border-radius: 280px 300px 700px 300px;
+  position:relative;
+  top: 10vh;
+  transform: rotate(45deg);
+  box-shadow: 0 8px 30px 5px rgb(0 0 0 / 25%);
+}
+.box-eye{
+  background-color: black;
+  width: 2.6vh;
+  height: 2.6vh;
+  border-radius: 50%;
+  position: relative;
+  bottom: 273px;
+  left: 146px;
+  z-index: 1;
+}
+.intro-eye{
+  background-color: black;
+  width: 2.6vh;
+  height: 2.6vh;
+  border-radius: 50%;
+  position: relative;
+  bottom: 289px;
+  left: 191px;
+  z-index: 1;
+}
+.box button{
+  background-color: white;
+  width: 3.4vw;
+  height: 8vh;
+  border-radius: 50%;
+  border: solid black 2px;
+  position: relative;
+  bottom: 361px;
+  left: 43px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.box button:hover{
+  cursor: pointer;
+  background-color:gainsboro;
+  color: gainsboro;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button{
+    padding: 0;
+    border: none;
+    background: none;
+}
+.contain-intro{
+  background-color: rgb(126, 7, 7);
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  line-height: 250px;
+  box-shadow: 0 8px 30px 5px rgb(0 0 0 / 25%);
+  border-radius: 0px 50px;
+  border: solid black 2px;
+  transform: rotate(-44deg);
+  position: relative;
+  bottom: 175px;
+  left: 130px;
+  z-index: 1;
+}
+.intro-clear{
+  position: relative;
+  bottom: 228px;
+  left: 0;
+  z-index: 1;
+}
+.intro-clear button{
+  color: rgb(126, 7, 7);
+  background-color: rgb(127, 7, 7);
+  width: 50px;
+  height: 50px;
+  border-radius: 0px 100px 5px;
+  transform: rotate(-48deg);
+  position: relative;
+  bottom: 11.3px;
+  left: 2px;
+}
+.intro-clear button:hover{
+  cursor: pointer;
+  color: red;
+  background-color: red;
+  box-shadow: 0 8px 30px 5px red (0.25);
+  border: solid black 1px;
 }
